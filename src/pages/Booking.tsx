@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
 import { toast } from "sonner";
+import { PhoneInput } from "@/components/ui/phone-input";
 
 const occasions = ["Birthday", "Wedding Anniversary", "Auspicious Beginning", "Shraddha Ritual", "Special Spiritual Intention", "Other"];
 const yajnaTypes = [
@@ -41,7 +42,6 @@ const Booking = () => {
             {[
               { label: "Full Name *", field: "name", type: "text", placeholder: "Enter your full name" },
               { label: "Email *", field: "email", type: "email", placeholder: "your@email.com" },
-              { label: "Phone / WhatsApp *", field: "phone", type: "tel", placeholder: "+91 98765 43210" },
             ].map((input) => (
               <div key={input.field}>
                 <label className="block text-sm font-semibold mb-1 text-foreground">{input.label}</label>
@@ -54,6 +54,16 @@ const Booking = () => {
                 />
               </div>
             ))}
+
+            <div>
+              <label className="block text-sm font-semibold mb-1 text-foreground">Phone / WhatsApp *</label>
+              <PhoneInput
+                defaultCountry="IN"
+                value={form.phone}
+                onChange={(value) => update("phone", value || "")}
+                placeholder="Enter phone number"
+              />
+            </div>
 
             <div>
               <label className="block text-sm font-semibold mb-1 text-foreground">Occasion *</label>

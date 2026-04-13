@@ -37,7 +37,7 @@ const Footer = () => (
           <div className="space-y-3 text-sm opacity-80">
             <div className="flex items-center gap-2"><Mail size={16} /> info@vaishnavahoma.org</div>
             <div className="flex items-center gap-2"><Phone size={16} /> +91 98765 43210</div>
-            <div className="flex items-center gap-2"><MapPin size={16} /> Sacred Temple, Vrindavan</div>
+            <div className="flex items-center gap-2"><MapPin size={16} /> Krishna Balaram Temple, Mayapur</div>
           </div>
         </div>
       </div>

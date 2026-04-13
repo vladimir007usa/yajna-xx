@@ -1,3 +1,17 @@
-# Welcome to your Lovable project
+# Sacred Vaishnava Homa
 
-TODO: Document your project here
+A web application for booking authentic Vaishnava Homa (Yajna) ceremonies for birthdays, anniversaries, and spiritual upliftment. Includes Gauseva and Vedic fire rituals.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Features
+
+- Browse Homa & Yajna services
+- Book ceremonies online
+- Learn about Gauseva
+- Contact & WhatsApp support
