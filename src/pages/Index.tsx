@@ -4,6 +4,7 @@ import heroImg from "@/assets/hero-homa.jpg";
 import gausevaImg from "@/assets/gauseva.jpg";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
+import YajnaGallery from "@/components/YajnaGallery";
 
 const features = [
   { icon: Flame, title: "Authentic Rituals", desc: "Traditional Vedic fire ceremonies with proper mantras" },
@@ -148,6 +149,9 @@ const Index = () => (
         </div>
       </div>
     </section>
+
+    {/* Yajna Gallery */}
+    <YajnaGallery />
 
     {/* Premium Packages */}
     <section className="py-16 bg-background">

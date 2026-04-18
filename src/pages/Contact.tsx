@@ -3,9 +3,9 @@ import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@vaishnavahoma.org", href: "mailto:info@vaishnavahoma.org" },
-  { icon: Phone, label: "Phone", value: "+91 98765 43210", href: "tel:+919876543210" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 98765 43210", href: "https://wa.me/919876543210" },
-  { icon: MapPin, label: "Location", value: "Sacred Temple, Vrindavan, India", href: "#" },
+  { icon: Phone, label: "Phone", value: "+91 96091 15016", href: "tel:+919609115016" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 96091 15016", href: "https://wa.me/919609115016?text=Hare%20Krishna!%0AI%20would%20like%20to%20request%20for%20a%20Yajna." },
+  { icon: MapPin, label: "Location", value: "Krishna Balaram Temple, Mayapur", href: "#" },
 ];
 
 const Contact = () => (
