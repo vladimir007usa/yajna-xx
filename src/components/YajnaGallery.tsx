@@ -1,8 +1,9 @@
 import SectionHeading from "./SectionHeading";
-import gallery1 from "@/assets/gallery-1.png";
-import gallery2 from "@/assets/gallery-2.png";
-import gallery3 from "@/assets/gallery-3.png";
-import gallery4 from "@/assets/gallery-4.png";
+import gallery1 from "@/assets/yajna-gallery-1.jpg";
+import gallery2 from "@/assets/yajna-gallery-2.jpg";
+import gallery3 from "@/assets/yajna-gallery-3.jpg";
+import gallery4 from "@/assets/yajna-gallery-4.jpg";
+import gallery5 from "@/assets/yajna-gallery-5.jpg";
 
 const YajnaGallery = () => {
   const videos = [
@@ -15,10 +16,15 @@ const YajnaGallery = () => {
       id: "STP9sCP5Mhw",
       title: "Sacred Yajna Ceremony - Part 2",
       url: "https://www.youtube.com/embed/STP9sCP5Mhw?si=VgIruQ3OibG7oBz_"
+    },
+    {
+      id: "e4jAQqqZJeg",
+      title: "Sacred Yajna Ceremony - Part 3",
+      url: "https://www.youtube.com/embed/e4jAQqqZJeg?si=pKKfZC8HsEiXuoz-"
     }
   ];
 
-  const images = [gallery1, gallery2, gallery3, gallery4];
+  const images = [gallery1, gallery2, gallery3, gallery4, gallery5];
 
   return (
     <section className="py-20 gradient-warm overflow-hidden">
@@ -30,7 +36,7 @@ const YajnaGallery = () => {
 
         <div className="max-w-6xl mx-auto">
           {/* Videos Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {videos.map((video) => (
               <div 
                 key={video.id} 
@@ -48,7 +54,7 @@ const YajnaGallery = () => {
           </div>
 
           {/* Pictures Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {images.map((img, index) => (
               <div 
                 key={index}
