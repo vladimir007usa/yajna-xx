@@ -17,7 +17,7 @@ const services = [
   { title: "Standard Yajna", priceINR: "₹4,500", priceUSD: "$50", features: ["Traditional Homa ceremony", "Sankalpa for devotee", "Basic offerings"] },
   { title: "Elaborate Yajna", priceINR: "₹6,400", priceUSD: "$70", features: ["Extended ritual process", "Additional offerings", "Enhanced prayers"] },
   { title: "Yajna + Full-Day Gauseva", priceINR: "₹10,000", priceUSD: "$108", features: ["Complete Yajna", "Full-day cow feeding", "Special blessings"], featured: true },
-  { title: "Yajna + Gauseva + Vaishnava Bhoj", priceINR: "₹15,000", priceUSD: "$150", features: ["Yajna ceremony", "Full-day Gauseva", "Vaishnava Bhoj (feeding devotees)"], premium: true },
+  { title: "Yajna + Gauseva + Vaishnava Bhoj", priceINR: "₹15,000", priceUSD: "$150", features: ["Yajna ceremony", "Full-day Gauseva", "Vaishnava Bhoj (feeding devotees)"], premium: true, featured: true },
   { title: "Complete Seva Package", priceINR: "₹20,000", priceUSD: "$200", features: ["Yajna ceremony", "Full-day Gauseva", "Krishna Balarama Seva", "Vaishnava Bhoj"], premium: true, featured: true },
 ];
 
