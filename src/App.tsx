@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Services from "./pages/Services";
 import Seva from "./pages/Seva";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
@@ -26,7 +25,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/seva" element={<Seva />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />

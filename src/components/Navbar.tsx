@@ -6,7 +6,6 @@ import lotusIcon from "@/assets/lotus-icon.png";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/services", label: "Yajna Services" },
   { to: "/seva", label: "Seva" },
   { to: "/booking", label: "Book" },
   { to: "/contact", label: "Contact" },

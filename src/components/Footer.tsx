@@ -20,7 +20,6 @@ const Footer = () => (
           <h4 className="font-heading text-sm uppercase tracking-wider mb-4 text-gold">Quick Links</h4>
           <div className="space-y-2">
             {[
-              { to: "/services", label: "Yajna Services" },
               { to: "/seva", label: "Seva & Donations" },
               { to: "/booking", label: "Request a yajna" },
               { to: "/about", label: "About Us" },
