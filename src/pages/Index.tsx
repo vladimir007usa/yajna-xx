@@ -21,10 +21,7 @@ const services = [
   { title: "Complete Seva Package", priceINR: "₹20,000", priceUSD: "$200", features: ["Yajna ceremony", "Full-day Gauseva", "Krishna Balarama Seva", "Vaishnava Bhoj"], premium: true, featured: true },
 ];
 
-const testimonials = [
-  { text: "A truly beautiful and authentic spiritual experience. The Yajna was performed with utmost devotion.", author: "Radha D." },
-  { text: "Highly authentic rituals. I felt a deep connection with the divine during the entire ceremony.", author: "Govind S." },
-];
+
 
 const Index = () => {
   const [showMore, setShowMore] = useState(false);
@@ -153,20 +150,7 @@ const Index = () => {
       {/* Yajna Gallery */}
       <YajnaGallery />
 
-      {/* Testimonials */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4">
-          <SectionHeading title="Devotee Experiences" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((t, i) => (
-              <blockquote key={i} className="bg-card border border-border rounded-lg p-6">
-                <p className="text-foreground italic mb-4">🙏 "{t.text}"</p>
-                <cite className="text-sm text-muted-foreground not-italic">— {t.author}</cite>
-              </blockquote>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Final CTA */}
       <section className="py-20 gradient-saffron text-center">
