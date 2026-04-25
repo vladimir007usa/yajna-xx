@@ -34,9 +34,9 @@ const Index = () => (
       <div className="relative z-10 text-center px-4 max-w-3xl animate-fade-up">
         <p className="text-gold font-heading text-sm uppercase tracking-[0.3em] mb-4">🔥 Sacred Vedic Traditions</p>
         <h1 className="font-heading text-4xl md:text-6xl font-bold text-temple-cream leading-tight mb-6">
-          Sacred Vaishnava Homa for Divine Blessings
+          Sacred<br />Vaishnava Homa
         </h1>
-        <p className="text-temple-cream/80 text-lg mb-8 leading-relaxed">
+        <p className="text-temple-cream text-lg mb-8 leading-relaxed">
           Perform traditional Yajna for birthdays, anniversaries, auspicious beginnings, and spiritual upliftment.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
