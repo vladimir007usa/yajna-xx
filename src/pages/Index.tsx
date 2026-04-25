@@ -92,25 +92,7 @@ const Index = () => (
       </div>
     </section>
 
-    {/* Why Choose Us */}
-    <section className="py-16 bg-secondary">
-      <div className="container mx-auto px-4">
-        <SectionHeading title="Why Choose Us" />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {[
-            { icon: ShieldCheck, label: "Authentic Vaishnava Tradition" },
-            { icon: Users, label: "Experienced Devotee Priests" },
-            { icon: BookOpen, label: "Complete Ritual Process" },
-            { icon: Heart, label: "Seva Included" },
-          ].map((item) => (
-            <div key={item.label} className="text-center">
-              <item.icon className="mx-auto text-primary mb-2" size={32} />
-              <p className="text-sm font-semibold text-foreground">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+
 
     {/* Services Preview */}
     <section className="py-20 bg-background">
