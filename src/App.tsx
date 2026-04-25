@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Seva from "./pages/Seva";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
+import OurYajna from "./pages/OurYajna";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/seva" element={<Seva />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/our-yajna" element={<OurYajna />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
