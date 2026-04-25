@@ -12,6 +12,7 @@ import Seva from "./pages/Seva";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 import OurYajna from "./pages/OurYajna";
+import VCF from "./pages/VCF";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/our-yajna" element={<OurYajna />} />
+          <Route path="/vcf" element={<VCF />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
