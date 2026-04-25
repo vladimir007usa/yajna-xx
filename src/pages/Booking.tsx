@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import { toast } from "sonner";
 import { PhoneInput } from "@/components/ui/phone-input";
@@ -14,9 +15,17 @@ const yajnaTypes = [
 ];
 
 const Booking = () => {
+  const [searchParams] = useSearchParams();
   const [form, setForm] = useState({
     name: "", email: "", phone: "", occasion: "", yajnaType: "", date: "", intentions: "",
   });
+
+  useEffect(() => {
+    const typeFromUrl = searchParams.get("type");
+    if (typeFromUrl && yajnaTypes.includes(typeFromUrl)) {
+      setForm(prev => ({ ...prev, yajnaType: typeFromUrl }));
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
