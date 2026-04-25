@@ -30,7 +30,7 @@ const YajnaGallery = () => {
     <section className="py-20 gradient-warm overflow-hidden">
       <div className="container mx-auto px-4">
         <SectionHeading 
-          title="📿 Know about Yajna!" 
+          title="📿 Know about us" 
           subtitle="Experience the sacred atmosphere and ancient traditions through our visual gallery"
         />
 
