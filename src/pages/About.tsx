@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import { BookOpen, Flame, Heart, Shield } from "lucide-react";
+import BackButton from "@/components/BackButton";
 
 const values = [
   { icon: BookOpen, title: "Proper Mantra Chanting", desc: "Every mantra recited with precision and devotion" },
@@ -12,6 +13,10 @@ const About = () => (
   <main className="pt-16">
     <section className="py-20 gradient-warm">
       <div className="container mx-auto px-4 max-w-3xl">
+        <div className="mb-8">
+          <BackButton />
+        </div>
+        
         <SectionHeading
           title="🙏 About Our Vaishnava Tradition"
           subtitle="Our Yajnas are performed by experienced devotees following authentic Vaishnava traditions."
@@ -30,6 +35,10 @@ const About = () => (
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <BackButton />
         </div>
       </div>
     </section>

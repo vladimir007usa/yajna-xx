@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import BackButton from "@/components/BackButton";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@vaishnavahoma.org", href: "mailto:info@vaishnavahoma.org" },
@@ -12,6 +13,10 @@ const Contact = () => (
   <main className="pt-16">
     <section className="py-20 gradient-warm">
       <div className="container mx-auto px-4 max-w-2xl">
+        <div className="mb-8">
+          <BackButton />
+        </div>
+
         <SectionHeading
           title="📩 Get in Touch"
           subtitle="We are honored to assist you in arranging your sacred ceremony."
@@ -42,6 +47,10 @@ const Contact = () => (
           <p className="text-muted-foreground leading-relaxed">
             We are happy to assist you in organizing your sacred ceremony. Feel free to reach out with any questions about our Yajna services.
           </p>
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <BackButton />
         </div>
       </div>
     </section>
