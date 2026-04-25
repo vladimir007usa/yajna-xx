@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SectionHeading from "./SectionHeading";
 import gallery1 from "@/assets/yajna-gallery-1.jpg";
 import vcfImg from "@/assets/vcf-education.png";
-import gallery3 from "@/assets/yajna-gallery-3.jpg";
+import nandigramImg from "@/assets/nandigram.png";
 
 const YajnaGallery = () => {
   return (
@@ -58,18 +58,26 @@ const YajnaGallery = () => {
             </div>
           </div>
 
-          {/* Row 3: Text Left, Image Right */}
+          {/* Row 3: Text Left, Image Right (NandiGram Section) */}
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 space-y-6 order-2 md:order-1">
-              <h3 className="font-heading text-3xl font-semibold text-foreground">Spiritual Transformation</h3>
+              <h3 className="font-heading text-3xl font-semibold text-foreground">Sri NandiGram</h3>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Participating in a Yajna brings peace, prosperity, and spiritual upliftment. 
-                It is an invitation to invoke divine grace into your life and the lives of your loved ones.
+                Discover a premium gated community in Mayapur offering luxury villas and spiritual living. 
+                Experience a lifestyle centered on organic farming, sacred temples, and Vedic principles.
               </p>
+              <a 
+                href="https://www.nandigram.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block border border-primary text-primary px-8 py-3 rounded-md font-heading text-sm uppercase tracking-wider hover:bg-primary/5 transition-colors"
+              >
+                Explore Sri NandiGram
+              </a>
             </div>
             <div className="flex-1 order-1 md:order-2">
               <div className="rounded-2xl overflow-hidden shadow-temple border-2 border-gold/20 transform hover:scale-[1.02] transition-transform duration-500">
-                <img src={gallery3} alt="Spiritual Growth" className="w-full h-auto object-cover aspect-[4/3]" />
+                <img src={nandigramImg} alt="Sri NandiGram Mayapur" className="w-full h-auto object-cover aspect-[4/3]" />
               </div>
             </div>
           </div>
