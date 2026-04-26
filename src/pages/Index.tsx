@@ -29,7 +29,7 @@ const Index = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Sacred Homa fire ceremony" className="w-full h-full object-cover" width={1920} height={1024} />
           <div className="absolute inset-0 bg-temple-brown/60" />
