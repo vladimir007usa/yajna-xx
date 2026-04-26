@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -26,18 +26,19 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location]); // Re-run on location change
 
   const isHomePage = location.pathname === "/";
   const isTransparent = isHomePage && !isScrolled;
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b ${
         isTransparent 
-          ? "bg-transparent py-4" 
-          : "bg-background/95 backdrop-blur-md border-b border-border py-2 shadow-sm"
+          ? "bg-transparent border-transparent py-3" 
+          : "bg-background/95 backdrop-blur-md border-border py-2 shadow-md"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
