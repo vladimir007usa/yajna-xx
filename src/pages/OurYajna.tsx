@@ -5,10 +5,10 @@ import gallery2 from "@/assets/yajna-gallery-2.jpg";
 import gallery3 from "@/assets/yajna-gallery-3.jpg";
 import gallery4 from "@/assets/yajna-gallery-4.jpg";
 import gallery5 from "@/assets/yajna-gallery-5.jpg";
-import gallery6 from "@/assets/yajna-gallery-6.jpg";
-import gallery7 from "@/assets/yajna-gallery-7.jpg";
-import gallery8 from "@/assets/yajna-gallery-8.jpg";
-import gallery9 from "@/assets/yajna-gallery-9.jpg";
+import gallery6 from "@/assets/yajna-gallery-6.png";
+import gallery7 from "@/assets/yajna-gallery-7.png";
+import gallery8 from "@/assets/yajna-gallery-8.png";
+import gallery9 from "@/assets/yajna-gallery-9.png";
 
 const OurYajna = () => {
   const videos = [
