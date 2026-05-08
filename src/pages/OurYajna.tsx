@@ -13,6 +13,11 @@ import gallery9 from "@/assets/yajna-gallery-9.png";
 const OurYajna = () => {
   const videos = [
     {
+      id: "ODmPEdwE_Bk",
+      title: "Visit Varnasrama College in Mayapur, Sri NandiGram",
+      url: "https://www.youtube.com/embed/ODmPEdwE_Bk?si=B2ghE4WbnAUPBcyB"
+    },
+    {
       id: "EVjJb2zg3JM",
       title: "Sacred Yajna Ceremony - Part 1",
       url: "https://www.youtube.com/embed/EVjJb2zg3JM?si=y1i1tBx0j0rel878"
