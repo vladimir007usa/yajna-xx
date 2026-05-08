@@ -22,6 +22,11 @@ const OurYajna = () => {
       id: "e4jAQqqZJeg",
       title: "Sacred Yajna Ceremony - Part 3",
       url: "https://www.youtube.com/embed/e4jAQqqZJeg?si=pKKfZC8HsEiXuoz-"
+    },
+    {
+      id: "O_Bifp3z_G4",
+      title: "Sacred Yajna Ceremony - Part 4",
+      url: "https://www.youtube.com/embed/O_Bifp3z_G4?si=NVURTAYx4loL9jik"
     }
   ];
 
@@ -42,7 +47,7 @@ const OurYajna = () => {
 
           <div className="max-w-6xl mx-auto">
             {/* Videos Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
               {videos.map((video) => (
                 <div 
                   key={video.id} 
