@@ -63,7 +63,7 @@ const Index = () => {
       <section className="py-20 gradient-warm">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="invoke Auspiciousness through fire sacrifice for the satisfaction of lord Vishnu"
+            title="✨ invoke Auspiciousness through fire sacrifice for the satisfaction of lord Vishnu"
             subtitle="We offer authentic Vaishnava Homa (Yajna) ceremonies performed with devotion and adherence to traditional Vedic principles."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
