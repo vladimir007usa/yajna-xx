@@ -63,17 +63,8 @@ const Index = () => {
       <section className="py-20 gradient-warm">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="✨ Invoke Divine Grace Through Sacred Fire Rituals"
-            subtitle={
-              <>
-                <p className="mb-4">
-                  invoke Auspiciousness through fire sacrifice for the satisfaction of lord Vishnu
-                </p>
-                <p>
-                  We offer authentic Vaishnava Homa (Yajna) ceremonies performed with devotion and adherence to traditional Vedic principles.
-                </p>
-              </>
-            }
+            title="invoke Auspiciousness through fire sacrifice for the satisfaction of lord Vishnu"
+            subtitle="We offer authentic Vaishnava Homa (Yajna) ceremonies performed with devotion and adherence to traditional Vedic principles."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div>
