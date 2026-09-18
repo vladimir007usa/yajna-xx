@@ -31,7 +31,7 @@ const ServiceCard = ({ title, priceINR, priceUSD, features, featured }: ServiceC
       ))}
     </ul>
     <Link
-      to="/booking"
+      to={`/booking?type=${encodeURIComponent(`${title} – ${priceINR}`)}`}
       className={`block text-center py-2 px-4 rounded-md text-sm font-semibold transition-colors ${
         featured
           ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"

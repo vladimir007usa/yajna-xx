@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import { toast } from "sonner";
 import { PhoneInput } from "@/components/ui/phone-input";
+import BackButton from "@/components/BackButton";
 
 const occasions = ["Birthday", "Wedding Anniversary", "Auspicious Beginning", "Shraddha Ritual", "Special Spiritual Intention", "Other"];
 const yajnaTypes = [
@@ -13,9 +15,17 @@ const yajnaTypes = [
 ];
 
 const Booking = () => {
+  const [searchParams] = useSearchParams();
   const [form, setForm] = useState({
     name: "", email: "", phone: "", occasion: "", yajnaType: "", date: "", intentions: "",
   });
+
+  useEffect(() => {
+    const typeFromUrl = searchParams.get("type");
+    if (typeFromUrl && yajnaTypes.includes(typeFromUrl)) {
+      setForm(prev => ({ ...prev, yajnaType: typeFromUrl }));
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,6 +43,10 @@ const Booking = () => {
     <main className="pt-16">
       <section className="py-20 gradient-warm">
         <div className="container mx-auto px-4 max-w-2xl">
+          <div className="mb-8">
+            <BackButton />
+          </div>
+
           <SectionHeading
             title="📿 Book Your Yajna"
             subtitle="Submit your request and our team will contact you within 24 hours."
@@ -122,6 +136,10 @@ const Booking = () => {
             <p className="text-muted-foreground text-sm">
               Once your booking is confirmed, donation details will be shared securely via email or WhatsApp.
             </p>
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <BackButton />
           </div>
         </div>
       </section>

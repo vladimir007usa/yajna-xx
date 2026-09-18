@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import gausevaImg from "@/assets/gauseva.jpg";
 import { Heart, Sparkles, Sun } from "lucide-react";
+import BackButton from "@/components/BackButton";
 
 const sevas = [
   { icon: Heart, title: "Gauseva", desc: "Cow protection & feeding — a most sacred act in Vaishnava tradition" },
@@ -15,6 +16,10 @@ const Seva = () => (
   <main className="pt-16">
     <section className="py-20 gradient-warm">
       <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto mb-8">
+          <BackButton />
+        </div>
+
         <SectionHeading
           title="🌿 The Power of Seva"
           subtitle="Seva (selfless service) enhances the spiritual potency of every Yajna."
@@ -52,6 +57,10 @@ const Seva = () => (
           <Link to="/booking" className="inline-block mt-8 gradient-saffron text-primary-foreground px-8 py-3 rounded-md font-heading text-sm uppercase tracking-wider hover:opacity-90 transition-opacity">
             Participate in Seva
           </Link>
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <BackButton />
         </div>
       </div>
     </section>
