@@ -35,7 +35,7 @@ const Footer = () => (
           <h4 className="font-heading text-sm uppercase tracking-wider mb-4 text-gold">Contact</h4>
           <div className="space-y-3 text-sm opacity-80">
             <div className="flex items-center gap-2"><Mail size={16} /> info@vaishnavahoma.org</div>
-            <div className="flex items-center gap-2"><Phone size={16} /> +91 96091 15016</div>
+            <div className="flex items-center gap-2"><Phone size={16} /> +91 92396 33577</div>
             <div className="flex items-center gap-2"><MapPin size={16} /> Krishna Balaram Temple, Mayapur</div>
           </div>
         </div>

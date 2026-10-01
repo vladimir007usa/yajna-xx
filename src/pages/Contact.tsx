@@ -4,8 +4,8 @@ import BackButton from "@/components/BackButton";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@vaishnavahoma.org", href: "mailto:info@vaishnavahoma.org" },
-  { icon: Phone, label: "Phone", value: "+91 96091 15016", href: "tel:+919609115016" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 96091 15016", href: "https://wa.me/919609115016?text=Hare%20Krishna!%0AI%20would%20like%20to%20request%20for%20a%20Yajna." },
+  { icon: Phone, label: "Phone", value: "+91 92396 33577", href: "tel:+919239633577" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 92396 33577", href: "https://wa.me/919239633577?text=Hare%20Krishna!%0AI%20would%20like%20to%20request%20for%20a%20Yajna." },
   { icon: MapPin, label: "Location", value: "Varnasrama College Foundation, Mayapur", href: "https://www.google.com/maps/place/Varnasrama+College+Foundation/@23.4334191,88.4065862,819m/data=!3m1!1e3!4m6!3m5!1s0x39f91fc4621d38f7:0xc492f193c188550c!8m2!3d23.4333915!4d88.409497!16s%2Fg%2F11vqp4zd28" },
 ];
 
@@ -51,13 +51,13 @@ const Contact = () => (
           </div>
 
           <div className="h-full min-h-[400px] rounded-lg overflow-hidden border border-border shadow-temple">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6882.971475058872!2d88.4065862!3d23.4334191!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91fc4621d38f7%3A0xc492f193c188550c!2sVarnasrama%20College%20Foundation!5e1!3m2!1sen!2sin!4v1777217037840!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0, minHeight: "400px" }} 
-              allowFullScreen={true} 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6882.971475058872!2d88.4065862!3d23.4334191!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91fc4621d38f7%3A0xc492f193c188550c!2sVarnasrama%20College%20Foundation!5e1!3m2!1sen!2sin!4v1777217037840!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: "400px" }}
+              allowFullScreen={true}
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
